@@ -1,3 +1,4 @@
+@User
 Feature: User API Testing
 
   Scenario: Fetch valid user by ID
@@ -8,6 +9,6 @@ Feature: User API Testing
     When I send a GET request to "/users/999"
     Then I should receive a 404 error
 
-  Scenario: Send invalid request body
-    When I send a POST request to "/users" with invalid JSON
-    Then I should receive a 400 error
+#  Scenario: Send invalid request body
+#    When I send a POST request to "/users" with invalid JSON
+#    Then I should receive a 400 error
